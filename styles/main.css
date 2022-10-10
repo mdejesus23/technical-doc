@@ -1,0 +1,54 @@
+ h1 {
+  text-align: center;
+  margin: 40px auto;
+  background-color: var(--blue01);
+  color: white;
+ }
+ 
+ .html-basics {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    background-color: var(--blue01);
+    color: white;
+    
+  }
+
+  main {
+    margin: 40px 0;
+    width: 80%;
+    background-color: var(--gray02);
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 30px;
+  }
+
+  .grid-item1 {
+    width: 100%;
+    overflow: auto;
+    background-color: var(--gray01);
+    text-align: left;
+  }
+
+  .grid-item2 {
+    padding-top: 15px;
+    line-height: 25px;
+  }
+
+  
+
+
+
+
+ 
+
+ 
+
+ 
