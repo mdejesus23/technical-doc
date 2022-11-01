@@ -1,54 +1,124 @@
- h1 {
+main {
+  font-size: 1.05rem;
+  margin: 40px auto;
+  width: 95%;
+  background-color: var(--bg-color04);
+}
+
+main li {
+  margin-left: 25px;
+  margin-bottom: 0.7rem;
+}
+
+main p {
+  margin-bottom: 0.6rem;
+}
+
+main div {
+  margin: 10px 0;
+}
+
+h1 {
   text-align: center;
   margin: 40px auto;
-  background-color: var(--blue01);
-  color: white;
+  color: black;
  }
  
- .html-basics {
-    font-size: 1.5rem;
+ header {
+    font-size: 1.15rem;
     margin-bottom: 40px;
     padding-left: 20px;
-    background-color: var(--blue01);
+    background-color: var(--bg-color01);
     color: white;
-    
   }
 
-  main {
-    margin: 40px 0;
-    width: 80%;
-    background-color: var(--gray02);
-  }
-
-  section {
-    margin-bottom: 40px;
+  .heading-rule {
+    margin-bottom: 20px;
   }
 
   .grid-container {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
     column-gap: 30px;
   }
-
-  .grid-item1 {
-    width: 100%;
-    overflow: auto;
-    background-color: var(--gray01);
-    text-align: left;
-  }
-
-  .grid-item2 {
-    padding-top: 15px;
-    line-height: 25px;
-  }
-
   
+  /* for large screen view */
+  @media (min-width: 1000.1px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 30px;
+    }
 
+    section {
+      margin-bottom: 40px;
+    }
+  }
+  
+  /* Tablet screen */
+  @media (max-width: 1000px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 20px;
+    }
 
+    section {
+      margin-bottom: 30px;
+    }
+  }
+  
+  /* Mobile screen */
+  @media (max-width: 800px) {
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 10px;
+    }
 
-
+    section {
+      margin-bottom: 15px;
+    }
+  }
  
+  .grid-item1 {
+    text-align: left;
+    overflow: hidden;
+  }
 
- 
+  pre {
+    background-color: var(--bg-color03);
+    overflow: auto;
+  }
 
+  code {
+    color: var(--text-color01);
+    background-color: var(--bg-color03);
+  }
+
+  .text-code {
+    color: var(--text-color03);
+  }
+
+  .html-attribute {
+    color: var(--text-color02);
+  }
+
+  .css-selector {
+    color: var(--text-color05);
+  }
  
+  .grid-item2 {
+    padding-top: 10px;
+    max-height: 700px;
+    overflow-y: auto;
+  }
+
+  .syntax-remarks {
+    margin-top: 50px;
+    color: var(--text-color04);
+  }
+
+  .css-value {
+    margin: 20px 0;
+  }

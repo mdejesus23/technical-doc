@@ -5,41 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML and Css docs</title>
+    <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/nav.css" />
-    <link rel="stylesheet" href="styles/general.css" />
   </head>
   <body>
     <nav id="navbar">
       <header>HTML & CSS Cheatsheet</header>
       <div class="flex-container">
         <ul>
-          <li class="nav-link"><a href="#html-basics">HTML Basics</a></li>
-          <li class="nav-link"><a href="#html-syntax">HTML Syntax</a></li>
-          <li class="nav-link"><a href="#attributes">Attributes</a></li>
-          <li class="nav-link">CSS Basics</li>
-          <li class="nav-link">CSS Syntax</li>
-          <li class="nav-link">CSS Properties</li>
-          <li class="nav-link">CSS Values</li>
-          <li class="nav-link">Class Attributes</li>
-          <li class="nav-link">Chrome DevTools</li>
-          <li class="nav-link">Text Styles</li>
-          <li class="nav-link">CSS Display Property</li>
+          <a href="#html-basics"><li class="nav-link">HTML Basics</li></a>
+          <a href="#html-syntax"><li class="nav-link">HTML Syntax</li></a>
+          <a href="#attributes"><li class="nav-link">Attributes</li></a>
+          <a href="#css-basics"><li class="nav-link">CSS Basics</li></a>
+          <a href="#css-syntax"><li class="nav-link">CSS Syntax</li></a>
+          <a href="#css-properties"><li class="nav-link">CSS Properties</li></a>
+          <a href="#css-values"><li class="nav-link">CSS Values</li></a>
+          <a href="#css-attributes"
+            ><li class="nav-link">Class Attributes</li></a
+          >
+          <a href="#css-pseudo"><li class="nav-link">CSS Pseudo-Class</li></a>
+          <a href="#css-inter-prop"
+            ><li class="nav-link">Intermediate CSS</li></a
+          >
+          <a href="#chrome-devtools"
+            ><li class="nav-link">Chrome DevTools</li></a
+          >
+          <a href="#css-box-model"><li class="nav-link">CSS Box Model</li></a>
+          <a href="#text-style"><li class="nav-link">Text Styles</li></a>
+          <a href="#nav-link"><li class="nav-link">The HTML Structure</li></a>
+          <a href="#html-images"><li class="nav-link">Images</li></a>
+          <a href="#html-inputs"><li class="nav-link">Inputs</li></a>
+          <a href="#display-property"
+            ><li class="nav-link">CSS Display Property</li></a
+          >
         </ul>
       </div>
     </nav>
-
     <main>
       <h1>HTML and CSS Guide</h1>
       <!--html basics section-->
-      <section>
-        <p class="html-basics" id="html-basics">HTML Basics</p>
+      <section id="html-basics">
+        <header>HTML Basics</header>
         <div class="grid-container">
           <div class="grid-item1">
+            <!--Code section-->
             <pre>
               <code>
-    <span><</span>button>Hello<<span>/button></span><!--code demo-->
-    <span><</span>p>paragraph of text<<span>/p></span><!--code demo-->
+    &lt;button&gt;<span class="text-code">Hello</span>&lt;/button&gt;
+    &lt;p&gt;<span class="text-code">This is a paragraph of text</span>&lt;/p&gt;
               </code>
             </pre>
           </div>
@@ -47,6 +61,315 @@
             <p>Creates a button with the text "Hello" inside.</p>
             <p>Creates a paragraph of text.</p>
           </div>
+        </div>
+      </section>
+
+      <!--html Syntax section-->
+      <section id="html-syntax">
+        <header>HTML Syntax</header>
+        <div class="heading-rule">
+          <p>Syntax = rules for writing HTML code (like grammar in English)</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    &lt;button&gt;<span class="text-code">Hello</span>&lt;/button&gt;
+
+
+      &lt;p&gt;<span class="text-code">paragraph of text</span>&lt;/p&gt;
+
+      &lt;p&gt;<span class="text-code">paragraph    of    text</span>&lt;/p&gt;
+      
+      &lt;p&gt;
+          <span class="text-code">paragraph of text</span>
+      &lt;/p&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <ol class="syntax-list">
+              <li>
+                Elements should have an opening tag and a matching closing tag.
+              </li>
+              <li>
+                In HTML, extra spaces and newlines are combined into 1 space.
+              </li>
+            </ol>
+            <div class="syntax-remarks">
+              <p>All 3 examples will show the same result on the web page.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Attributes section-->
+      <section id="attributes">
+        <header>Attributes</header>
+        <div class="heading-rule">
+          <p>Attributes modify how an HTML element behaves.</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    &lt;a href=<span class="html-attribute">"https://youtube.com"</span>&gt;
+      <span class="text-code">Link to youtube</span>
+    &lt;/a&gt;
+
+     &lt;a href=<span class="html-attribute">"https://youtube.com"</span> target=<span class="html-attribute">"_blank"</span>&gt;
+      <span class="text-code">Link to youtube</span>
+    &lt;/a&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <p><code>&lt;a&gt;</code> = link to another website</p>
+            <p>
+              <code>href</code> = modifies which website is opened when clicking
+              this link.
+            </p>
+            <p>
+              <code
+                ><span class="html-tag">target</span>=<span
+                  class="html-attribute"
+                  >"_blank"</span
+                ></code
+              >causes the link to be opened in a new tab.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--CSS basics section-->
+      <section id="css-basics">
+        <header>CSS Basics</header>
+        <div class="heading-rule">
+          <p>
+            One way of writing CSS code is using the
+            <code>&lt;style&gt;</code> HTML element.
+          </p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    &lt;style&gt;
+        <span class="css-selector">button</span> {
+          background-color:<span class="html-attribute"> red;</span>
+          color:<span class="html-attribute"> white;</span>
+        }
+     &lt;/style&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <p>Modifies all <code>&lt;button&gt;</code>s on the page.</p>
+            <p>Change background color to red.</p>
+            <p>Change text color to white.</p>
+          </div>
+        </div>
+      </section>
+
+      <!--CSS Syntax section-->
+      <section id="css-syntax">
+        <header>CSS Syntax</header>
+        <div class="heading-rule">
+          <p>CSS Selector = which elements will be modified.</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+        <span class="css-selector">button</span> {
+          background-color:<span class="html-attribute"> red;</span>
+        }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <p>
+              all the styles for this selector must be placed inside<code
+                >{...}</code
+              >
+            </p>
+            <p>
+              Property <code>background-color:</code> (what we're modifying)
+            </p>
+            <p>
+              Value <span class="html-attribute"> red;</span> (what we're
+              modifying the property to)
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--CSS Properties section-->
+      <section id="css-properties">
+        <header>CSS Properties</header>
+        <div class="heading-rule">
+          <p>Here are some common CSS properties we can use:</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+
+        <span class="css-selector">button</span> {
+          background-color:<span class="html-attribute"> red;</span>
+
+
+
+          color: <span class="html-attribute"> white;</span>
+
+
+
+          height: <span class="html-attribute"> 36px;</span>
+
+
+
+
+          width: <span class="html-attribute"> 105px;</span>
+
+          border: <span class="html-attribute"> none;</span>
+          border-radius: <span class="html-attribute"> 2px;</span>
+          cursor: <span class="html-attribute"> pointer;</span>
+
+
+          border-color: <span class="html-attribute"> red;</span>
+          border-style: <span class="html-attribute"> solid;</span>
+
+
+          
+          
+          border-width: <span class="html-attribute"> 1px;</span>
+        }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="css-value">
+              <p>Sets the <code>background color:</code> Common values:</p>
+              <ul>
+                <li>
+                  Color name: <span class="html-attribute">red</span>,
+                  <span class="html-attribute">white</span>,
+                  <span class="html-attribute">black</span>
+                </li>
+                <li>
+                  rgb value:
+                  <span class="html-attribute">rgb(0, 150, 255)</span>;
+                </li>
+                <li>Hex value: <span class="html-attribute">#0096FF</span></li>
+              </ul>
+            </div>
+
+            <p class="css-value">
+              Sets the text <code>color:</code> Takes the same values as
+              background-color (color name, rgb, hex).
+            </p>
+            <div class="css-value">
+              <p>Set the height. Common values:</p>
+              <ul>
+                <li>Pixel value: <span class="html-attribute">36px</span></li>
+                <li>Percentage: <span class="html-attribute">50%</span></li>
+              </ul>
+            </div>
+
+            <p class="css-value">
+              Sets the <code>width:</code> Takes the same values as height.
+            </p>
+            <div class="css-value">
+              <p>Removes the <code>border:</code></p>
+              <p><code>border-radius:</code> Creates rounded corners</p>
+              <p>
+                Changes the mouse or <code>cursor:</code> when hovering over the
+                element.
+              </p>
+            </div>
+            <div class="css-value">
+              <p>Sets the <code>border-color:</code></p>
+              <p>Sets the <code>border-style:</code> Common values:</p>
+              <ul>
+                <li>
+                  <span class="html-attribute">solid</span>
+                </li>
+                <li>
+                  <span class="html-attribute">dotted</span>
+                </li>
+                <li>
+                  <span class="html-attribute">dashed</span>
+                </li>
+              </ul>
+            </div>
+            <p class="css-value">Sets the <code>border-width:</code></p>
+          </div>
+        </div>
+      </section>
+
+      <!--CSS Values section-->
+      <section id="css-values">
+        <header>CSS Values</header>
+        <div class="heading-rule">
+          <p>
+            Each CSS property has a set of values that are allowed (<code
+              >&lt;background-color&gt;</code
+            >
+            allows color values, <code>&lt;cursor&gt;</code> allows
+            <span class="html-attribute">solid</span>,
+            <span class="html-attribute">dotted</span>,
+            <span class="html-attribute">dashed</span>, etc.)
+          </p>
+        </div>
+        <div class="">
+          <p>Here are some categories of values that are useful to know:</p>
+        </div>
+        <div>
+          <p>Color Vlues</p>
+          <ol>
+            <li>
+              A color name: <span class="html-attribute">red</span>,
+              <span class="html-attribute">white</span>,
+              <span class="html-attribute">black</span>
+            </li>
+            <li>
+              RGB value: <span class="html-attribute">rgb(0, 150, 255)</span>;
+              <p>
+                RGB is a more precise way of measuring color. Every color can be
+                created using a combination of red, green, and blue (RGB). In
+                CSS, this is represented by
+                <span class="html-attribute">rgb(...)</span>
+              </p>
+              <p>Each color has a min value = 0 and a max value = 255.</p>
+              <p><span class="html-attribute">rgb(0, 0, 0)</span>; = black</p>
+              <p>
+                <span class="html-attribute">rgb(255, 255, 255)</span>; = white
+              </p>
+            </li>
+            <li>
+              Hex value
+              <p>Hex is another way to write RGB.</p>
+              <p><span class="html-attribute">#0096ff</span></p>
+              <ul>
+                <li>
+                  Each character in Hex is base 16, which means it can have a
+                  value of 0, 1, 2, ... 8, 9, A, B, C, D, E, F (16 possible
+                  values).
+                </li>
+                <li>
+                  Using the first 2 characters, we can have 16 * 16 = 256
+                  possible values from 0 - 255:
+                  <p>00 = 0</p>
+                  <p>01 = 1</p>
+                </li>
+              </ul>
+            </li>
+          </ol>
         </div>
       </section>
     </main>

@@ -1,34 +1,91 @@
+/*General CSS starts*/
 @media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
-    }
+  * {
+    scroll-behavior: smooth;
   }
+}
 :root {
-    --blue01: rgb(73, 16, 188);
-    --blue02: rgb(46, 10, 117);
-    --gray01: rgb(228, 231, 228);
-    --gray02: rgb(251, 249, 249);
+  --bg-color01: rgb(27, 27, 50); /*for nav bc*/
+  --bg-color02: rgb(223, 223, 226); /*for nav bc when hover*/
+  --bg-color03: rgb(226, 228, 233); /*for code bc*/
+  --bg-color04: rgb(245, 246, 247); /*for main bc*/
+  --text-color01: blue; /*for html element tag*/
+  --text-color02: rgb(221, 124, 34); /*for html attributes*/
+  --text-color03: black; /*for text inside html element*/
+  --text-color04: rgb(209, 35, 44);
+  --text-color05: green; /* for css selector*/
 }
 
 /* Override default style and set padding and margin to nothing */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-  html {
-    font-size: 18px;
-  }
+html {
+  font-size: 16px;
+}
 
+body {
+  color: black;
+  height: 30000px;
+}
+
+/* pc screen */
+@media (min-width: 1200.1px) {
   body {
     color: black;
-    padding-left: 350px;
-    height: 30000px;
+    margin-left: 300px;
   }
+}
 
-  /* Make all link text black with no text decoration */
-a {
-    color: white;
-    text-decoration: none;
+/* Tablet screen */
+@media (max-width: 1200px) {
+  body {
+    color: black;
+    margin-left: 200px;
   }
+}
+
+/* Mobile screen */
+@media (max-width: 680px) {
+  body {
+    color: black;
+    margin-left: 100px;
+  }
+}
+  
+
+/* Make all link text black with no text decoration */
+a {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+
+}
+
+
+/* Makes the font-size responsive*/
+/* large screen */
+@media (min-width: 1400px) {
+html {
+  font-size: 18px;
+}
+}
+
+/* Tablet screen */
+@media (max-width: 768px) {
+html {
+  font-size: 16px;
+}
+}
+
+/* Mobile screen */
+@media (max-width: 580px) {
+html {
+  font-size: 15px;
+}
+}
