@@ -330,7 +330,7 @@
           <p>Here are some categories of values that are useful to know:</p>
         </div>
         <div>
-          <p>Color Vlues</p>
+          <p class="css-values-title">Color Values</p>
           <ol>
             <li>
               A color name: <span class="html-attribute">red</span>,
@@ -366,8 +366,70 @@
                   possible values from 0 - 255:
                   <p>00 = 0</p>
                   <p>01 = 1</p>
+                  <p>0F = 15</p>
+                  <p>10 = 16</p>
+                  <p>11 = (1 * 16) + 1 = 17</p>
+                  <p>FF = (15 * 16) + 15 = 255</p>
+                </li>
+                <li>
+                  This is the same range as RGB (0 to 255), so the first 2
+                  characters in Hex are used to represent red, the second 2
+                  characters represent green, and the third 2 characters
+                  represent blue. Usually, it's easier to use a Hex to RGB
+                  calculator to convert.
                 </li>
               </ul>
+            </li>
+            <li>
+              RGBA value:
+              <span class="html-attribute">rgba(0, 150, 255, 0.5)</span>;
+              <p>
+                Same as RGB, except with an additional a-value (alpha value).
+                The a-value determines how see-through the color is. 0 =
+                complete see-through, 1 = solid color and not see-through, 0.5 =
+                50% see-through.
+              </p>
+            </li>
+          </ol>
+          <p class="css-values-title">Measurement Values</p>
+          <ol>
+            <li>
+              Pixels: <span class="html-attribute">50px</span>,
+              <span class="html-attribute">100px</span>
+              <p>
+                Pixels (px) are a common unit of measurement in the digital
+                world.
+              </p>
+              <p>For example: a 4K screen is 3840px by 2160px.</p>
+            </li>
+            <li>
+              Percent: <span class="html-attribute">50%</span>,
+              <span class="html-attribute">100%</span>
+              <p>
+                A relative measurement. For example, <code>width</code>:
+                <span class="html-attribute">50%</span> means
+                <span class="html-attribute">50%</span> of the width of the page
+                (or if the element is inside another element,
+                <span class="html-attribute">50%</span> of the width of the
+                container element).
+              </p>
+            </li>
+            <li>
+              em / rem: <span class="html-attribute">1em</span>,
+              <span class="html-attribute">1rem</span>
+              <p>
+                Relative measurements that are useful for accessibility. em =
+                relative to the font-size of the element (<span
+                  class="html-attribute"
+                  >2em</span
+                >
+                means 2 times the font size). rem = relative to the font-size of
+                the page, which is 16px by default (<span class="html-attribute"
+                  >2rem</span
+                >
+                means 2 times the font size of the page = 2 * 16px = 32px by
+                default).
+              </p>
             </li>
           </ol>
         </div>
