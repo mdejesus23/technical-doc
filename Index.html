@@ -21,7 +21,7 @@
           <a href="#css-syntax"><li class="nav-link">CSS Syntax</li></a>
           <a href="#css-properties"><li class="nav-link">CSS Properties</li></a>
           <a href="#css-values"><li class="nav-link">CSS Values</li></a>
-          <a href="#css-attributes"
+          <a href="#class-attributes"
             ><li class="nav-link">Class Attributes</li></a
           >
           <a href="#css-pseudo"><li class="nav-link">CSS Pseudo-Class</li></a>
@@ -52,8 +52,8 @@
             <!--Code section-->
             <pre>
               <code>
-    &lt;button&gt;<span class="text-code">Hello</span>&lt;/button&gt;
-    &lt;p&gt;<span class="text-code">This is a paragraph of text</span>&lt;/p&gt;
+  &lt;button&gt;<span class="text-code">Hello</span>&lt;/button&gt;
+  &lt;p&gt;<span class="text-code">This is a paragraph of text</span>&lt;/p&gt;
               </code>
             </pre>
           </div>
@@ -75,16 +75,16 @@
             <!--Code section-->
             <pre>
               <code>
-    &lt;button&gt;<span class="text-code">Hello</span>&lt;/button&gt;
+  &lt;button&gt;<span class="text-code">Hello</span>&lt;/button&gt;
 
 
-      &lt;p&gt;<span class="text-code">paragraph of text</span>&lt;/p&gt;
+    &lt;p&gt;<span class="text-code">paragraph of text</span>&lt;/p&gt;
 
-      &lt;p&gt;<span class="text-code">paragraph    of    text</span>&lt;/p&gt;
+    &lt;p&gt;<span class="text-code">paragraph    of    text</span>&lt;/p&gt;
       
-      &lt;p&gt;
+    &lt;p&gt;
           <span class="text-code">paragraph of text</span>
-      &lt;/p&gt;
+    &lt;/p&gt;
               </code>
             </pre>
           </div>
@@ -97,7 +97,7 @@
                 In HTML, extra spaces and newlines are combined into 1 space.
               </li>
             </ol>
-            <div class="syntax-remarks">
+            <div class="syntax-remarks text-container">
               <p>All 3 examples will show the same result on the web page.</p>
             </div>
           </div>
@@ -115,13 +115,13 @@
             <!--Code section-->
             <pre>
               <code>
-    &lt;a href=<span class="html-attribute">"https://youtube.com"</span>&gt;
-      <span class="text-code">Link to youtube</span>
-    &lt;/a&gt;
+   &lt;a href=<span class="html-attribute">"https://youtube.com"</span>&gt;
+     <span class="text-code">Link to youtube</span>
+   &lt;/a&gt;
 
-     &lt;a href=<span class="html-attribute">"https://youtube.com"</span> target=<span class="html-attribute">"_blank"</span>&gt;
-      <span class="text-code">Link to youtube</span>
-    &lt;/a&gt;
+   &lt;a href=<span class="html-attribute">"https://youtube.com"</span> target=<span class="html-attribute">"_blank"</span>&gt;
+     <span class="text-code">Link to youtube</span>
+   &lt;/a&gt;
               </code>
             </pre>
           </div>
@@ -157,12 +157,12 @@
             <!--Code section-->
             <pre>
               <code>
-    &lt;style&gt;
-        <span class="css-selector">button</span> {
-          background-color:<span class="html-attribute"> red;</span>
-          color:<span class="html-attribute"> white;</span>
-        }
-     &lt;/style&gt;
+  &lt;style&gt;
+      <span class="css-selector">button</span> {
+        background-color:<span class="html-attribute"> red;</span>
+        color:<span class="html-attribute"> white;</span>
+      }
+  &lt;/style&gt;
               </code>
             </pre>
           </div>
@@ -185,9 +185,9 @@
             <!--Code section-->
             <pre>
               <code>
-        <span class="css-selector">button</span> {
-          background-color:<span class="html-attribute"> red;</span>
-        }
+    <span class="css-selector">button</span> {
+      background-color:<span class="html-attribute"> red;</span>
+    }
               </code>
             </pre>
           </div>
@@ -220,40 +220,37 @@
             <pre>
               <code>
 
-        <span class="css-selector">button</span> {
-          background-color:<span class="html-attribute"> red;</span>
+    <span class="css-selector">button</span> {
+      background-color:<span class="html-attribute"> red;</span>
 
 
-
-          color: <span class="html-attribute"> white;</span>
-
+      color: <span class="html-attribute"> white;</span>
 
 
-          height: <span class="html-attribute"> 36px;</span>
+      height: <span class="html-attribute"> 36px;</span>
 
 
+      width: <span class="html-attribute"> 105px;</span>
+
+      border: <span class="html-attribute"> none;</span>
+      border-radius: <span class="html-attribute"> 2px;</span>
+      cursor: <span class="html-attribute"> pointer;</span>
 
 
-          width: <span class="html-attribute"> 105px;</span>
-
-          border: <span class="html-attribute"> none;</span>
-          border-radius: <span class="html-attribute"> 2px;</span>
-          cursor: <span class="html-attribute"> pointer;</span>
+      border-color: <span class="html-attribute"> red;</span>
+      border-style: <span class="html-attribute"> solid;</span>
 
 
-          border-color: <span class="html-attribute"> red;</span>
-          border-style: <span class="html-attribute"> solid;</span>
 
 
           
-          
-          border-width: <span class="html-attribute"> 1px;</span>
-        }
+      border-width: <span class="html-attribute"> 1px;</span>
+    }
               </code>
             </pre>
           </div>
           <div class="grid-item2">
-            <div class="css-value">
+            <div class="text-container">
               <p>Sets the <code>background color:</code> Common values:</p>
               <ul>
                 <li>
@@ -269,11 +266,14 @@
               </ul>
             </div>
 
-            <p class="css-value">
-              Sets the text <code>color:</code> Takes the same values as
-              background-color (color name, rgb, hex).
-            </p>
-            <div class="css-value">
+            <div class="text-container">
+              <p>
+                Sets the text <code>color:</code> Takes the same values as
+                background-color (color name, rgb, hex).
+              </p>
+            </div>
+
+            <div class="text-container">
               <p>Set the height. Common values:</p>
               <ul>
                 <li>Pixel value: <span class="html-attribute">36px</span></li>
@@ -281,10 +281,13 @@
               </ul>
             </div>
 
-            <p class="css-value">
-              Sets the <code>width:</code> Takes the same values as height.
-            </p>
-            <div class="css-value">
+            <div class="text-container">
+              <p>
+                Sets the <code>width:</code> Takes the same values as height.
+              </p>
+            </div>
+
+            <div class="text-container">
               <p>Removes the <code>border:</code></p>
               <p><code>border-radius:</code> Creates rounded corners</p>
               <p>
@@ -292,7 +295,7 @@
                 element.
               </p>
             </div>
-            <div class="css-value">
+            <div class="text-container">
               <p>Sets the <code>border-color:</code></p>
               <p>Sets the <code>border-style:</code> Common values:</p>
               <ul>
@@ -307,7 +310,9 @@
                 </li>
               </ul>
             </div>
-            <p class="css-value">Sets the <code>border-width:</code></p>
+            <div class="text-container">
+              <p class="css-value">Sets the <code>border-width:</code></p>
+            </div>
           </div>
         </div>
       </section>
@@ -432,6 +437,136 @@
               </p>
             </li>
           </ol>
+        </div>
+      </section>
+
+      <!--class attribute-->
+      <section id="class-attributes">
+        <header>Class Attributes</header>
+        <div class="heading-rule">
+          <p>Class attribute = lets us target specific elements with CSS.</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    &lt;button class=<span class="html-attribute">"subscribe-button"</span>&gt;
+        <span class="text-code">SUBSCRIBE</span>
+    &lt;/button&gt;
+
+    <span class="css-selector">.subscribe-button</span> {
+        <span class="text-code">....</span>
+    }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>
+                Add a class to an element. The class name (the text between the
+                <span class="html-attribute">"..."</span>) can be anything you
+                want, but no spaces.
+              </p>
+            </div>
+            <div class="text-container">
+              <p>
+                Target all elements on the page with
+                <code>class</code>=<span class="html-attribute"
+                  >"subscribe-button"</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Class attributes row 2 grid-->
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    &lt;button class=<span class="html-attribute">"subscribe-button"</span>&gt;
+        <span class="text-code">SUBSCRIBE</span>
+    &lt;/button&gt;
+    &lt;button class=<span class="html-attribute">"subscribe-button"</span>&gt;
+        <span class="text-code">JOIN</span>
+    &lt;/button&gt;
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>Multiple elements can have the same class</p>
+            </div>
+          </div>
+        </div>
+
+        <!--Class attributes row 3 grid-->
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    &lt;button class=<span class="html-attribute">"youtube-button subscribe-button"</span>&gt;
+      <span class="text-code">SUBSCRIBE</span>
+    &lt;/button&gt;
+
+    <span class="css-selector">button</span> {
+      <span class="text-code">...</span>
+    }
+
+    <span class="css-selector">youtube-button</span> {
+      <span class="text-code">...</span>
+    }
+
+    <span class="css-selector">subscriber-button</span> {
+      <span class="text-code">...</span>
+    }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>An element can have multiple classes, separated by space</p>
+            </div>
+            <div class="text-container">
+              Elements can be targeted by multiple CSS selectors. Here, all 3
+              CSS selectors will target the button above.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--CSS Pseudo-Class section-->
+      <section id="css-pseudo">
+        <header>CSS Pseudo-classes</header>
+        <div class="heading-rule"></div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    <span class="css-selector">button</span> {
+      background-color:<span class="html-attribute"> red;</span>
+    }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <p>
+              all the styles for this selector must be placed inside<code
+                >{...}</code
+              >
+            </p>
+            <p>
+              Property <code>background-color:</code> (what we're modifying)
+            </p>
+            <p>
+              Value <span class="html-attribute"> red;</span> (what we're
+              modifying the property to)
+            </p>
+          </div>
         </div>
       </section>
     </main>
