@@ -591,30 +591,65 @@
             <pre>
               <code>
     <span class="css-selector">.subscribe-button:hover</span> {
-      ...
-    }
+      opacity: <span class="html-attribute">0.5</span>;
+      opacity: <span class="html-attribute">0</span>;
+      opacity: <span class="html-attribute">1</span>;
 
-    <span class="css-selector">.subscribe-button:active</span> {
-      ...
+      transition: <span class="html-attribute">&lt;transition&gt; &lt;duration&gt;</span>;
+
+      transition: <span class="html-attribute">background-color 1s</span>;
+      transition: <span class="html-attribute">color 0.15s</span>;
+      transition: <span class="html-attribute">&lt;property1&gt; &lt;duration1&gt;</span>,
+          <span class="html-attribute">&lt;property2&gt; &lt;duration2&gt;</span>,
+          <span class="html-attribute">...</span>;
+      transition: <span class="html-attribute">background-color 0.15s</span>,
+          <span class="html-attribute">color 0.15s</span>;
+
+      box-shadow: <span class="html-attribute">&lt;h-position&gt; &lt;v-position&gt; &lt;blur&gt; &lt;color&gt;</span>;
+      box-shadow: <span class="html-attribute">3px 4px 5px black</span>;
+
+      box-shadow: <span class="html-attribute">3px 4px 0 gba(0, 0, 0, 0.15)</span>;
     }
               </code>
             </pre>
           </div>
           <div class="grid-item2">
             <div class="text-container">
-              <p>
-                These styles only apply when hovering over an element with
-                <code>class</code>=<span class="html-attribute"
-                  >"subscribe-button"</span
-                >
-              </p>
+              <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
+              <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
+              <p>1 = not see-through (this is the default value).</p>
             </div>
+
             <div class="text-container">
               <p>
-                These styles only apply when clicking on an element with
-                <code>class</code>=<span class="html-attribute"
-                  >"subscribe-button"</span
-                >
+                Transition smoothly when changing styles (often used when
+                hovering).
+              </p>
+              <p>Transition background color over 1 second.</p>
+              <p>Transition text color over 0.15 seconds.</p>
+              <p>
+                Transition multiple properties by separating them with a comma.
+              </p>
+            </div>
+
+            <div class="text-container">
+              <p>
+                Transition both background color and text color over 0.15
+                seconds.
+              </p>
+            </div>
+
+            <div class="text-container">
+              <p>
+                Creates a shadow that's 3px to the right of the element, 4px to
+                the bottom, with 5px of blur, and color of black.
+              </p>
+            </div>
+
+            <div class="text-container">
+              <p>
+                Creates a shadow that's 3px to the right, 4px to the bottom,
+                with no blur, and a very faint black color.
               </p>
             </div>
           </div>
