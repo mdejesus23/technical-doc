@@ -331,71 +331,74 @@
             <span class="html-attribute">dashed</span>, etc.)
           </p>
         </div>
-        <div class="">
+        <div>
           <p>Here are some categories of values that are useful to know:</p>
         </div>
-        <div>
-          <p class="css-values-title">Color Values</p>
-          <ol>
-            <li>
-              A color name: <span class="html-attribute">red</span>,
-              <span class="html-attribute">white</span>,
-              <span class="html-attribute">black</span>
-            </li>
-            <li>
-              RGB value: <span class="html-attribute">rgb(0, 150, 255)</span>;
-              <p>
-                RGB is a more precise way of measuring color. Every color can be
-                created using a combination of red, green, and blue (RGB). In
-                CSS, this is represented by
-                <span class="html-attribute">rgb(...)</span>
-              </p>
-              <p>Each color has a min value = 0 and a max value = 255.</p>
-              <p><span class="html-attribute">rgb(0, 0, 0)</span>; = black</p>
-              <p>
-                <span class="html-attribute">rgb(255, 255, 255)</span>; = white
-              </p>
-            </li>
-            <li>
-              Hex value
-              <p>Hex is another way to write RGB.</p>
-              <p><span class="html-attribute">#0096ff</span></p>
-              <ul>
-                <li>
-                  Each character in Hex is base 16, which means it can have a
-                  value of 0, 1, 2, ... 8, 9, A, B, C, D, E, F (16 possible
-                  values).
-                </li>
-                <li>
-                  Using the first 2 characters, we can have 16 * 16 = 256
-                  possible values from 0 - 255:
-                  <p>00 = 0</p>
-                  <p>01 = 1</p>
-                  <p>0F = 15</p>
-                  <p>10 = 16</p>
-                  <p>11 = (1 * 16) + 1 = 17</p>
-                  <p>FF = (15 * 16) + 15 = 255</p>
-                </li>
-                <li>
-                  This is the same range as RGB (0 to 255), so the first 2
-                  characters in Hex are used to represent red, the second 2
-                  characters represent green, and the third 2 characters
-                  represent blue. Usually, it's easier to use a Hex to RGB
-                  calculator to convert.
-                </li>
-              </ul>
-            </li>
-            <li>
-              RGBA value:
-              <span class="html-attribute">rgba(0, 150, 255, 0.5)</span>;
-              <p>
-                Same as RGB, except with an additional a-value (alpha value).
-                The a-value determines how see-through the color is. 0 =
-                complete see-through, 1 = solid color and not see-through, 0.5 =
-                50% see-through.
-              </p>
-            </li>
-          </ol>
+        <div class="text-container">
+          <div class="text-container">
+            <p class="css-values-title">Color Values</p>
+            <ol>
+              <li>
+                A color name: <span class="html-attribute">red</span>,
+                <span class="html-attribute">white</span>,
+                <span class="html-attribute">black</span>
+              </li>
+              <li>
+                RGB value: <span class="html-attribute">rgb(0, 150, 255)</span>;
+                <p>
+                  RGB is a more precise way of measuring color. Every color can
+                  be created using a combination of red, green, and blue (RGB).
+                  In CSS, this is represented by
+                  <span class="html-attribute">rgb(...)</span>
+                </p>
+                <p>Each color has a min value = 0 and a max value = 255.</p>
+                <p><span class="html-attribute">rgb(0, 0, 0)</span>; = black</p>
+                <p>
+                  <span class="html-attribute">rgb(255, 255, 255)</span>; =
+                  white
+                </p>
+              </li>
+              <li>
+                Hex value
+                <p>Hex is another way to write RGB.</p>
+                <p><span class="html-attribute">#0096ff</span></p>
+                <ul>
+                  <li>
+                    Each character in Hex is base 16, which means it can have a
+                    value of 0, 1, 2, ... 8, 9, A, B, C, D, E, F (16 possible
+                    values).
+                  </li>
+                  <li>
+                    Using the first 2 characters, we can have 16 * 16 = 256
+                    possible values from 0 - 255:
+                    <p>00 = 0</p>
+                    <p>01 = 1</p>
+                    <p>0F = 15</p>
+                    <p>10 = 16</p>
+                    <p>11 = (1 * 16) + 1 = 17</p>
+                    <p>FF = (15 * 16) + 15 = 255</p>
+                  </li>
+                  <li>
+                    This is the same range as RGB (0 to 255), so the first 2
+                    characters in Hex are used to represent red, the second 2
+                    characters represent green, and the third 2 characters
+                    represent blue. Usually, it's easier to use a Hex to RGB
+                    calculator to convert.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                RGBA value:
+                <span class="html-attribute">rgba(0, 150, 255, 0.5)</span>;
+                <p>
+                  Same as RGB, except with an additional a-value (alpha value).
+                  The a-value determines how see-through the color is. 0 =
+                  complete see-through, 1 = solid color and not see-through, 0.5
+                  = 50% see-through.
+                </p>
+              </li>
+            </ol>
+          </div>
           <p class="css-values-title">Measurement Values</p>
           <ol>
             <li>
@@ -547,25 +550,73 @@
             <!--Code section-->
             <pre>
               <code>
-    <span class="css-selector">button</span> {
-      background-color:<span class="html-attribute"> red;</span>
+    <span class="css-selector">.subscribe-button:hover</span> {
+      ...
+    }
+
+    <span class="css-selector">.subscribe-button:active</span> {
+      ...
     }
               </code>
             </pre>
           </div>
           <div class="grid-item2">
-            <p>
-              all the styles for this selector must be placed inside<code
-                >{...}</code
-              >
-            </p>
-            <p>
-              Property <code>background-color:</code> (what we're modifying)
-            </p>
-            <p>
-              Value <span class="html-attribute"> red;</span> (what we're
-              modifying the property to)
-            </p>
+            <div class="text-container">
+              <p>
+                These styles only apply when hovering over an element with
+                <code>class</code>=<span class="html-attribute"
+                  >"subscribe-button"</span
+                >
+              </p>
+            </div>
+            <div class="text-container">
+              <p>
+                These styles only apply when clicking on an element with
+                <code>class</code>=<span class="html-attribute"
+                  >"subscribe-button"</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Intermediate CSS Properties-->
+      <section id="css-inter-prop">
+        <header>Intermediate CSS Properties</header>
+        <div class="heading-rule"></div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    <span class="css-selector">.subscribe-button:hover</span> {
+      ...
+    }
+
+    <span class="css-selector">.subscribe-button:active</span> {
+      ...
+    }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>
+                These styles only apply when hovering over an element with
+                <code>class</code>=<span class="html-attribute"
+                  >"subscribe-button"</span
+                >
+              </p>
+            </div>
+            <div class="text-container">
+              <p>
+                These styles only apply when clicking on an element with
+                <code>class</code>=<span class="html-attribute"
+                  >"subscribe-button"</span
+                >
+              </p>
+            </div>
           </div>
         </div>
       </section>

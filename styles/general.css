@@ -1,9 +1,4 @@
 /*General CSS starts*/
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
 :root {
   --bg-color01: rgb(27, 27, 50); /*for nav bc*/
   --bg-color02: rgb(223, 223, 226); /*for nav bc when hover*/
@@ -14,6 +9,12 @@
   --text-color03: black; /*for text inside html element*/
   --text-color04: rgb(209, 35, 44);
   --text-color05: green; /* for css selector*/
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
 }
 
 /* Override default style and set padding and margin to nothing */
