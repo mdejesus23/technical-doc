@@ -6,38 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML and Css docs</title>
     <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/nav.css" />
   </head>
   <body>
-    <nav id="navbar">
-      <header>HTML & CSS Cheatsheet</header>
+    <div class="header-container">
+      <div class="menu-button" onclick="openNav()">&#9776;</div>
+    </div>
+    <nav id="myNavbar">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <header class="nav-header">HTML & CSS Cheatsheet</header>
       <div class="flex-container">
         <ul>
-          <a href="#html-basics"><li class="nav-link">HTML Basics</li></a>
-          <a href="#html-syntax"><li class="nav-link">HTML Syntax</li></a>
-          <a href="#attributes"><li class="nav-link">Attributes</li></a>
-          <a href="#css-basics"><li class="nav-link">CSS Basics</li></a>
-          <a href="#css-syntax"><li class="nav-link">CSS Syntax</li></a>
-          <a href="#css-properties"><li class="nav-link">CSS Properties</li></a>
-          <a href="#css-values"><li class="nav-link">CSS Values</li></a>
-          <a href="#class-attributes"
-            ><li class="nav-link">Class Attributes</li></a
+          <a href="#html-basics"
+            ><li class="nav-link" onclick="closeNav()">HTML Basics</li></a
           >
-          <a href="#css-pseudo"><li class="nav-link">CSS Pseudo-Class</li></a>
+          <a href="#html-syntax"
+            ><li class="nav-link" onclick="closeNav()">HTML Syntax</li></a
+          >
+          <a href="#attributes"
+            ><li class="nav-link" onclick="closeNav()">Attributes</li></a
+          >
+          <a href="#css-basics"
+            ><li class="nav-link" onclick="closeNav()">CSS Basics</li></a
+          >
+          <a href="#css-syntax"
+            ><li class="nav-link" onclick="closeNav()">CSS Syntax</li></a
+          >
+          <a href="#css-properties"
+            ><li class="nav-link" onclick="closeNav()">CSS Properties</li></a
+          >
+          <a href="#css-values"
+            ><li class="nav-link" onclick="closeNav()">CSS Values</li></a
+          >
+          <a href="#class-attributes"
+            ><li class="nav-link" onclick="closeNav()">Class Attributes</li></a
+          >
+          <a href="#css-pseudo"
+            ><li class="nav-link" onclick="closeNav()">CSS Pseudo-Class</li></a
+          >
           <a href="#css-inter-prop"
-            ><li class="nav-link">Intermediate CSS</li></a
+            ><li class="nav-link" onclick="closeNav()">Intermediate CSS</li></a
           >
           <a href="#chrome-devtools"
-            ><li class="nav-link">Chrome DevTools</li></a
+            ><li class="nav-link" onclick="closeNav()">Chrome DevTools</li></a
           >
-          <a href="#css-box-model"><li class="nav-link">CSS Box Model</li></a>
-          <a href="#text-style"><li class="nav-link">Text Styles</li></a>
-          <a href="#nav-link"><li class="nav-link">The HTML Structure</li></a>
-          <a href="#html-images"><li class="nav-link">Images</li></a>
-          <a href="#html-inputs"><li class="nav-link">Inputs</li></a>
+          <a href="#css-box-model"
+            ><li class="nav-link" onclick="closeNav()">CSS Box Model</li></a
+          >
+          <a href="#text-style"
+            ><li class="nav-link" onclick="closeNav()">Text Styles</li></a
+          >
+          <a href="#nav-link"
+            ><li class="nav-link" onclick="closeNav()">
+              The HTML Structure
+            </li></a
+          >
+          <a href="#html-images"
+            ><li class="nav-link" onclick="closeNav()">Images</li></a
+          >
+          <a href="#html-inputs"
+            ><li class="nav-link" onclick="closeNav()">Inputs</li></a
+          >
           <a href="#display-property"
-            ><li class="nav-link">CSS Display Property</li></a
+            ><li class="nav-link" onclick="closeNav()">
+              CSS Display Property
+            </li></a
           >
         </ul>
       </div>
@@ -672,6 +707,42 @@
           />
         </div>
       </section>
+
+      <!--CSS Box Model-->
+      <section id="css-box-model">
+        <header>CSS Box Model</header>
+        <div class="heading-rule">
+          <ul>
+            <li>Determines how much space an element takes up.</li>
+            <li>Determines how far away elements are from each other.</li>
+          </ul>
+        </div>
+        <div class="box-model-grid">
+          <div class="margin-grid1 box-grid">
+            <p>1. Margin = space on the outside.</p>
+            <img class="box-model-img" src="images/margin-img.jpg" />
+          </div>
+          <div class="padding-grid2 box-grid">
+            <p>2. Padding = space on the inside.</p>
+            <img class="box-model-img" src="images/padding-img.jpg" />
+          </div>
+          <div class="border-grid3 box-grid">
+            <p>3. Border.</p>
+            <img class="box-model-img" src="images/border-img.jpg" />
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!--JS-->
+    <script>
+      function openNav() {
+        document.getElementById("myNavbar").style.width = "400px";
+      }
+
+      function closeNav() {
+        document.getElementById("myNavbar").style.width = "0%";
+      }
+    </script>
   </body>
 </html>

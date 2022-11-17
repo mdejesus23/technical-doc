@@ -33,55 +33,49 @@ body {
   height: 30000px;
 }
 
+h1 {
+  text-align: center;
+  margin: 40px auto;
+  color: black;
+ }
+
+ /* Make all link text black with no text decoration */
+a {
+  color: white;
+  text-decoration: none;
+}
+
 /* pc screen */
 @media (min-width: 1200.1px) {
   body {
     color: black;
-    margin-left: 300px;
   }
+
+  html {
+    font-size: 18px;
+  }
+
 }
 
 /* Tablet screen */
 @media (max-width: 1200px) {
   body {
     color: black;
-    margin-left: 200px;
   }
+
+  html {
+    font-size: 16px;
+  }
+
 }
 
 /* Mobile screen */
 @media (max-width: 680px) {
   body {
     color: black;
-    margin-left: 100px;
   }
-}
-  
 
-/* Make all link text black with no text decoration */
-a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Makes the font-size responsive*/
-/* large screen */
-@media (min-width: 1400px) {
-html {
-  font-size: 18px;
-}
-}
-
-/* Tablet screen */
-@media (max-width: 768px) {
-html {
-  font-size: 16px;
-}
-}
-
-/* Mobile screen */
-@media (max-width: 580px) {
-html {
-  font-size: 15px;
-}
+  html {
+    font-size: 14px;
+  }
 }
