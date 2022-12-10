@@ -5,6 +5,8 @@ nav li {
 
 #myNavbar {
   visibility: visible;
+  overflow: auto;
+  padding-bottom: 300px;
 }
 
 #myNavbar ul {

@@ -80,6 +80,11 @@
               CSS Display Property
             </li></a
           >
+          <a href="#reference"
+            ><li class="nav-link" onclick="closeNav()">
+              Reference
+            </li></a
+          >
         </ul>
       </div>
     </nav>
@@ -282,7 +287,9 @@
       background-color:<span class="html-attribute"> red;</span>
 
 
+
       color: <span class="html-attribute"> white;</span>
+
 
 
       height: <span class="html-attribute"> 36px;</span>
@@ -290,15 +297,16 @@
 
       width: <span class="html-attribute"> 105px;</span>
 
+
+
       border: <span class="html-attribute"> none;</span>
       border-radius: <span class="html-attribute"> 2px;</span>
       cursor: <span class="html-attribute"> pointer;</span>
 
 
+
       border-color: <span class="html-attribute"> red;</span>
       border-style: <span class="html-attribute"> solid;</span>
-
-
 
 
           
@@ -323,14 +331,14 @@
                 <li>Hex value: <span class="html-attribute">#0096FF</span></li>
               </ul>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>
                 Sets the text <code>color:</code> Takes the same values as
                 background-color (color name, rgb, hex).
               </p>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>Set the height. Common values:</p>
               <ul>
@@ -338,13 +346,13 @@
                 <li>Percentage: <span class="html-attribute">50%</span></li>
               </ul>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>
                 Sets the <code>width:</code> Takes the same values as height.
               </p>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>Removes the <code>border:</code></p>
               <p><code>border-radius:</code> Creates rounded corners</p>
@@ -353,6 +361,7 @@
                 element.
               </p>
             </div>
+            <hr />
             <div class="text-container">
               <p>Sets the <code>border-color:</code></p>
               <p>Sets the <code>border-style:</code> Common values:</p>
@@ -368,6 +377,7 @@
                 </li>
               </ul>
             </div>
+            <hr />
             <div class="text-container">
               <p class="css-value">Sets the <code>border-width:</code></p>
             </div>
@@ -681,7 +691,7 @@
               <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
               <p>1 = not see-through (this is the default value).</p>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>
                 Transition smoothly when changing styles (often used when
@@ -693,21 +703,21 @@
                 Transition multiple properties by separating them with a comma.
               </p>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>
                 Transition both background color and text color over 0.15
                 seconds.
               </p>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>
                 Creates a shadow that's 3px to the right of the element, 4px to
                 the bottom, with 5px of blur, and color of black.
               </p>
             </div>
-
+            <hr />
             <div class="text-container">
               <p>
                 Creates a shadow that's 3px to the right, 4px to the bottom,
@@ -931,7 +941,69 @@
             </div>
           </div>
         </div>
+
+        <div class="text-container">
+          <p>
+            <code>&lt;p&gt;</code> by default have margin-top and margin-bottom.
+            A common practice is to
+          </p>
+        </div>
+        <div class="text-container">
+          <p>1. Reset the deault margins.</p>
+          <pre><code>
+    <span class="css-selector">p</span> {
+      margin-top: <span class="html-attribute">0</span>;
+      margin-bottom: <span class="html-attribute">0</span>;
+    }
+          </code></pre>
+        </div>
+
+        <div class="text-container">
+          <p>2. Then apply more precise margins.
+            <pre><code>
+    <span class="css-selector">p</span> {
+      margin-bottom: <span class="html-attribute">16px</span>;
+    }
+            </code></pre>
+          </p>
+        </div>
+
+        <div class="text-container">
+          Text Elements (also called Inline Elements)
+          <ul>
+            <li>
+              Text elements ( <code>&lt;strong&gt;, &lt;u&gt;, &lt;span&gt;, &lt;a&gt;</code>) appear within a line of text.
+              <p>this is a <code>&lt;strong&gt;</code> text element<code>&lt;/strong&gt;</code></p>
+              <p>Useful if we want to style only a part of the text.</p>
+            </li>
+            <li>
+              <code>&lt;span&gt;</code> is the most generic text element (it doesn't have any default styles.)
+            </li>
+            <li>
+              We can style text elements using a class:
+              <p>This is a <code>&lt;span class=</code><span class="css-selector">"shop-link"<code>></code></span>text element.<code>&lt;/span&gt;</code>
+            </li>
+        </div>
+            <pre><code>
+    <span class="css-selector">.shop-link</span> {
+      text-decoration: <span class="html-attribute">underline</span>;
+    }
+              </code></pre>
+          </ul>
+        
       </section>
+      <div class="id-locate" id="reference"></div>
+      <section>
+        <header>Reference</header>
+        <div class="text-container">
+          <ul>
+            <li>
+              All the document in this page is taken from <a href="https://supersimple.dev/html" target="_blank" class="reference-link">supersimple.dev</a> tutorial.
+            </li>
+          </ul>
+        </div>
+      </section>
+
     </main>
 
     <script src="js/menu.js"></script>
