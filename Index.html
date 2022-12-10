@@ -64,7 +64,7 @@
           <a href="#text-style"
             ><li class="nav-link" onclick="closeNav()">Text Styles</li></a
           >
-          <a href="#nav-link"
+          <a href="#html-structure"
             ><li class="nav-link" onclick="closeNav()">
               The HTML Structure
             </li></a
@@ -992,6 +992,178 @@
           </ul>
         
       </section>
+
+      <!--The HTML Structure-->
+      <div class="id-locate" id="html-structure"></div>
+      <section>
+        <header>The HTML Structure</header>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code-->
+            <pre>
+              <code>
+  &lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+    &lt;head&gt;
+      <span class="text-code">...</span>
+    &lt;/head&gt;
+    &lt;body&gt;
+      <span class="text-code">...</span>
+  &lt;/html&gt;
+              </code>
+            </pre>
+            <!--end code-->
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>Tells the browser to use a modern version of HTML.</p>
+            </div>
+            <div class="text-container">
+              <p><code>&lt;head&gt;</code> contains everything that's not visible like the title and description (a.k.a. metadata) as well as links to fonts and CSS stylesheets.</p>
+            </div>
+            <div class="text-container"><code>&lt;body&gt;</code> contains everything that's visible like buttons, texts, images, etc.</div>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Elements in the Head Section</p>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code-->
+            <pre>
+              <code>
+    &lt;head&gt;
+      &lt;title&gt;<span class="text-code">Title in the tab.</span>&lt;/title&gt;
+
+      &lt;link rel= <span class="html-attribute">"preconnect"</span> <code>href=</code><span class="html-attribute">"https://fonts.googleapis.com"</span>&gt;
+      &lt;link rel= <span class="html-attribute">"preconnect"</span> <code>href=</code><span class="html-attribute">"https://fonts.gstatic.com"</span> <code>crossorigin</code>&gt;
+      &lt;link rel= <span class="html-attribute">"preconnect"</span> <code>href=</code><span class="html-attribute">"https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=sw
+        ap"</span>&gt;
+
+      &lt;link rel= <span class="html-attribute">"stylesheet"</span> <code>href=</code><span class="html-attribute">"styles.css"</span>&gt;
+    &lt;/head&gt;
+    
+              </code>
+            </pre>
+            <!--end code-->
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>Sets the title in the tabs.</p>
+            </div>
+            <div class="text-container">
+              <p>Loads a font from Google onto the page. 1)Search "google fonts" in Google. 2) Pick the fonts and styles that you like. 3)Copy the code that Google provides into<code>&lt;head&gt;</code></p>
+            </div>
+            <div class="text-container">Loads a CSS file to the page.</div>
+          </div>
+        </div>
+
+        <div class="text-container">
+          <p>Filepaths</p>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code-->
+            <pre>
+              <code>
+    
+      <code>href=</code><span class="html-attribute">"styles.css"</span>
+      <code>href=</code><span class="html-attribute">"fold1/styles.css"</span>
+
+      <code>href=</code><span class="html-attribute">"fold1/fold2/styles.css"</span>
+              </code>
+            </pre>
+            <!--end code-->
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>looks for a file called <span class="html-attribute">"styles.css"</span> beside the HTML file.</p>
+              <p>Looks for a folder called <span class="html-attribute">"fold1"</span>beside the HTML file then goes into the folder and looks for <span class="html-attribute">"styles.css"</span></p>
+              <p>Go into <span class="html-attribute">"fold1"</span>, go into <span class="html-attribute">"fold2"</span>, look for <span class="html-attribute">"styles.css"</span></p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--Intermediate CSS Properties-->
+      <div class="id-locate" id="html-images"></div>
+      <section>
+        <header>Images</header>
+        <div class="heading-rule"></div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+    <span class="css-selector">.subscribe-button:hover</span> {
+      opacity: <span class="html-attribute">0.5</span>;
+      opacity: <span class="html-attribute">0</span>;
+      opacity: <span class="html-attribute">1</span>;
+
+      transition: <span class="html-attribute">&lt;transition&gt; &lt;duration&gt;</span>;
+
+      transition: <span class="html-attribute">background-color 1s</span>;
+      transition: <span class="html-attribute">color 0.15s</span>;
+      transition: <span class="html-attribute">&lt;property1&gt; &lt;duration1&gt;</span>,
+          <span class="html-attribute">&lt;property2&gt; &lt;duration2&gt;</span>,
+          <span class="html-attribute">...</span>;
+      transition: <span class="html-attribute">background-color 0.15s</span>,
+          <span class="html-attribute">color 0.15s</span>;
+
+      box-shadow: <span class="html-attribute">&lt;h-position&gt; &lt;v-position&gt; &lt;blur&gt; &lt;color&gt;</span>;
+      box-shadow: <span class="html-attribute">3px 4px 5px black</span>;
+
+      box-shadow: <span class="html-attribute">3px 4px 0 gba(0, 0, 0, 0.15)</span>;
+    }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
+              <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
+              <p>1 = not see-through (this is the default value).</p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Transition smoothly when changing styles (often used when
+                hovering).
+              </p>
+              <p>Transition background color over 1 second.</p>
+              <p>Transition text color over 0.15 seconds.</p>
+              <p>
+                Transition multiple properties by separating them with a comma.
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Transition both background color and text color over 0.15
+                seconds.
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Creates a shadow that's 3px to the right of the element, 4px to
+                the bottom, with 5px of blur, and color of black.
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Creates a shadow that's 3px to the right, 4px to the bottom,
+                with no blur, and a very faint black color.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Reference Section(last)-->
       <div class="id-locate" id="reference"></div>
       <section>
         <header>Reference</header>
@@ -1003,6 +1175,8 @@
           </ul>
         </div>
       </section>
+
+
 
     </main>
 
