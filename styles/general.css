@@ -30,14 +30,7 @@ html {
 
 body {
   color: black;
-  height: 30000px;
 }
-
-h1 {
-  text-align: center;
-  margin: 40px auto;
-  color: black;
- }
 
  /* Make all link text black with no text decoration */
 a {
@@ -48,6 +41,7 @@ a {
 /* pc screen */
 @media (min-width: 1200.1px) {
   body {
+    margin-left: 370px;
     color: black;
   }
 

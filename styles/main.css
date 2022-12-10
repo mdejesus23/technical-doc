@@ -1,7 +1,7 @@
 main {
   font-size: 1.05rem;
   margin: 80px auto;
-  width: 80%;
+  width: 100%;
   padding: 0 10px;
   letter-spacing: 0.6px;
   background-color: var(--bg-color04);
@@ -10,10 +10,16 @@ main {
 main li {
   margin-left: 25px;
 }
+
+h1 {
+  text-align: center;
+  margin: 0 auto 20px auto;
+  color: black;
+ }
  
  header {
     font-size: 1.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     padding-left: 20px;
     background-color: var(--bg-color01);
     color: white;
@@ -21,6 +27,10 @@ main li {
 
   .heading-rule {
     margin-bottom: 20px;
+  }
+
+  .id-locate {
+    height: 50px;
   }
 
   .grid-container {
@@ -39,6 +49,7 @@ main li {
     background-color: var(--bg-color03);
     overflow: auto;
     margin-bottom: 10px;
+    border-radius: 5px;
   }
 
   code {
@@ -59,9 +70,8 @@ main li {
   }
  
   .grid-item2 {
-    padding-top: 10px;
+    padding-top: 6px;
     max-height: 650px;
-    overflow-y: auto;
   }
 
   .syntax-remarks {
@@ -74,18 +84,23 @@ main li {
   }
 
   .text-container {
-    margin: 30px 0;
+    margin: 1rem 0;
   }
   
   .img-chrome-devtools {
-    width: 100%;
-    max-width: 900px;
+    width: 60%;
+    max-width: 800px;
   }
 
   .box-model-grid {
+    width: 90%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 20px;
+    column-gap: 80px;
+    margin-bottom: 100px;
   }
 
   .box-grid {
@@ -96,9 +111,16 @@ main li {
   }
 
   .box-model-img {
-    border: 2px solid black;
-    width: 100%;
+    border: 0 solid black;
+    width: 60%;
+    min-width: 160px;
+    box-shadow: 3px 3px 3px #aaaaaa;
   }
+
+  hr {
+    margin: 20px 0;
+  }
+
 
   
   /* for large screen view */
@@ -109,9 +131,6 @@ main li {
       column-gap: 30px;
     }
 
-    section {
-      margin-bottom: 40px;
-    }
   }
   
   /* Tablet screen */
@@ -127,9 +146,7 @@ main li {
       column-gap: 20px;
     }
 
-    section {
-      margin-bottom: 30px;
-    }
+    
   }
   
   /* Mobile screen */
@@ -140,24 +157,29 @@ main li {
       margin: 100px auto;
     }
 
-    section {
-      margin-bottom: 15px;
-    }
-
     .grid-container {
       display: grid;
       grid-template-columns: 1fr;
-      row-gap: 10px;
+    }
+
+    pre {
+      margin-bottom: 5px;
     }
 
     .box-model-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: 50px;
+      margin-bottom: 40px;
     }
 
     .box-grid {
       row-gap: 15px;
       justify-content: left;
     }
+
+    .img-chrome-devtools {
+      width: 80%;
+    }
+
   }

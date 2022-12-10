@@ -1,5 +1,4 @@
 .header-container {
-    margin: 0 auto 20px auto;
     height: 50px;
     background-color: var(--bg-color01);
     color: white;
@@ -17,14 +16,16 @@
 .menu-button {
     font-size: 30px;
     cursor: pointer;
-    width: 100px;
-    margin-left: 20px;
+    width: 34px;
+    height: 38px;
+    text-align: center;
+    margin-left: 30px;
 }
 
 @media (min-width: 1200.1px) {
-    .header-container {
+    .menu-button {
+        visibility: hidden;
     }
-    
 }
 
 /* Tablet screen */

@@ -3,6 +3,10 @@ nav li {
   list-style-type: none;
 }
 
+#myNavbar {
+  visibility: visible;
+}
+
 #myNavbar ul {
   width: 100%;
 }
@@ -12,11 +16,18 @@ nav li {
   color: black;
 }
 
+.closebtn {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  font-size: 20px;
+}
 
 @media (min-width: 1200.1px) {
   #myNavbar {
+    visibility: visible;
+    width: 350px;
     background-color: var(--bg-color01);
-    width: 300px;
     height: 100%;
     border-right: solid;
     color: white;
@@ -26,13 +37,6 @@ nav li {
     left: 0;
     top: 50px;
     bottom: 0;
-  }
-
-  .closebtn {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 20px;
   }
 
   .flex-container {
@@ -45,7 +49,7 @@ nav li {
   #myNavbar header {
     margin: 0;
     padding: 50px 15px 15px 15px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 600;
     text-align: center;
   }
@@ -55,16 +59,20 @@ nav li {
     padding: 15px 15px;
     border-top: 1px solid white;
     cursor: pointer;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     transition: background-color font-size 0.2s;
+  }
+
+  .closebtn {
+    visibility: hidden;
   }
 }
 
 /* Tablet screen */
 @media (max-width: 1200px) {
   #myNavbar {
+    width: 300px;
     background-color: var(--bg-color01);
-    width: 200px;
     height: 100%;
     border-right: solid;
     color: white;
@@ -72,7 +80,7 @@ nav li {
   
     position: fixed;
     left: 0;
-    top: 59px;
+    top: 50px;
     bottom: 0;
     z-index: 2;
   }
@@ -104,7 +112,7 @@ nav li {
     padding: 15px 15px;
     border-top: 1px solid white;
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     transition: background-color font-size 0.2s;
   }
   
@@ -113,8 +121,8 @@ nav li {
 /* Mobile screen */
 @media (max-width: 680px) {
   #myNavbar {
+    width: 260px;
     background-color: var(--bg-color01);
-    width: 0;
     height: 100%;
     border-right: solid;
     color: white;
@@ -155,7 +163,7 @@ nav li {
     padding: 10px 10px;
     border-top: 1px solid white;
     cursor: pointer;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: background-color font-size 0.2s;
   }
   

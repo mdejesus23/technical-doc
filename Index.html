@@ -15,7 +15,13 @@
       <div class="menu-button" onclick="openNav()">&#9776;</div>
     </div>
     <nav id="myNavbar">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+      <a
+        href="javascript:void(0)"
+        id="closebtn"
+        class="closebtn"
+        onclick="closeNav()"
+        >X</a
+      >
       <header class="nav-header">HTML & CSS Cheatsheet</header>
       <div class="flex-container">
         <ul>
@@ -77,10 +83,11 @@
         </ul>
       </div>
     </nav>
-    <main>
+    <main onclick="closeNav()">
       <h1>HTML and CSS Guide</h1>
       <!--html basics section-->
-      <section id="html-basics">
+      <div class="id-locate" id="html-basics"></div>
+      <section>
         <header>HTML Basics</header>
         <div class="grid-container">
           <div class="grid-item1">
@@ -93,14 +100,17 @@
             </pre>
           </div>
           <div class="grid-item2">
-            <p>Creates a button with the text "Hello" inside.</p>
-            <p>Creates a paragraph of text.</p>
+            <div class="text-container">
+              <p>Creates a button with the text "Hello" inside.</p>
+              <p>Creates a paragraph of text.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!--html Syntax section-->
-      <section id="html-syntax">
+      <div class="id-locate" id="html-syntax"></div>
+      <section>
         <header>HTML Syntax</header>
         <div class="heading-rule">
           <p>Syntax = rules for writing HTML code (like grammar in English)</p>
@@ -124,23 +134,27 @@
             </pre>
           </div>
           <div class="grid-item2">
-            <ol class="syntax-list">
-              <li>
-                Elements should have an opening tag and a matching closing tag.
-              </li>
-              <li>
-                In HTML, extra spaces and newlines are combined into 1 space.
-              </li>
-            </ol>
-            <div class="syntax-remarks text-container">
-              <p>All 3 examples will show the same result on the web page.</p>
+            <div class="text-container">
+              <ol class="syntax-list">
+                <li>
+                  Elements should have an opening tag and a matching closing
+                  tag.
+                </li>
+                <li>
+                  In HTML, extra spaces and newlines are combined into 1 space.
+                </li>
+              </ol>
+              <div class="syntax-remarks text-container">
+                <p>All 3 examples will show the same result on the web page.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!--Attributes section-->
-      <section id="attributes">
+      <div class="id-locate" id="attributes"></div>
+      <section>
         <header>Attributes</header>
         <div class="heading-rule">
           <p>Attributes modify how an HTML element behaves.</p>
@@ -161,25 +175,28 @@
             </pre>
           </div>
           <div class="grid-item2">
-            <p><code>&lt;a&gt;</code> = link to another website</p>
-            <p>
-              <code>href</code> = modifies which website is opened when clicking
-              this link.
-            </p>
-            <p>
-              <code
-                ><span class="html-tag">target</span>=<span
-                  class="html-attribute"
-                  >"_blank"</span
-                ></code
-              >causes the link to be opened in a new tab.
-            </p>
+            <div class="text-container">
+              <p><code>&lt;a&gt;</code> = link to another website</p>
+              <p>
+                <code>href</code> = modifies which website is opened when
+                clicking this link.
+              </p>
+              <p>
+                <code
+                  ><span class="html-tag">target</span>=<span
+                    class="html-attribute"
+                    >"_blank"</span
+                  ></code
+                >causes the link to be opened in a new tab.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!--CSS basics section-->
-      <section id="css-basics">
+      <div class="id-locate" id="css-basics"></div>
+      <section>
         <header>CSS Basics</header>
         <div class="heading-rule">
           <p>
@@ -202,15 +219,18 @@
             </pre>
           </div>
           <div class="grid-item2">
-            <p>Modifies all <code>&lt;button&gt;</code>s on the page.</p>
-            <p>Change background color to red.</p>
-            <p>Change text color to white.</p>
+            <div class="text-container">
+              <p>Modifies all <code>&lt;button&gt;</code>s on the page.</p>
+              <p>Change background color to red.</p>
+              <p>Change text color to white.</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!--CSS Syntax section-->
-      <section id="css-syntax">
+      <div class="id-locate" id="css-syntax"></div>
+      <section>
         <header>CSS Syntax</header>
         <div class="heading-rule">
           <p>CSS Selector = which elements will be modified.</p>
@@ -227,24 +247,27 @@
             </pre>
           </div>
           <div class="grid-item2">
-            <p>
-              all the styles for this selector must be placed inside<code
-                >{...}</code
-              >
-            </p>
-            <p>
-              Property <code>background-color:</code> (what we're modifying)
-            </p>
-            <p>
-              Value <span class="html-attribute"> red;</span> (what we're
-              modifying the property to)
-            </p>
+            <div class="text-container">
+              <p>
+                all the styles for this selector must be placed inside<code
+                  >{...}</code
+                >
+              </p>
+              <p>
+                Property <code>background-color:</code> (what we're modifying)
+              </p>
+              <p>
+                Value <span class="html-attribute"> red;</span> (what we're
+                modifying the property to)
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
       <!--CSS Properties section-->
-      <section id="css-properties">
+      <div class="id-locate" id="css-properties"></div>
+      <section>
         <header>CSS Properties</header>
         <div class="heading-rule">
           <p>Here are some common CSS properties we can use:</p>
@@ -353,7 +376,8 @@
       </section>
 
       <!--CSS Values section-->
-      <section id="css-values">
+      <div class="id-locate" id="css-values"></div>
+      <section>
         <header>CSS Values</header>
         <div class="heading-rule">
           <p>
@@ -479,7 +503,8 @@
       </section>
 
       <!--class attribute-->
-      <section id="class-attributes">
+      <div class="id-locate" id="class-attributes"></div>
+      <section>
         <header>Class Attributes</header>
         <div class="heading-rule">
           <p>Class attribute = lets us target specific elements with CSS.</p>
@@ -577,7 +602,8 @@
       </section>
 
       <!--CSS Pseudo-Class section-->
-      <section id="css-pseudo">
+      <div class="id-locate" id="css-pseudo"></div>
+      <section>
         <header>CSS Pseudo-classes</header>
         <div class="heading-rule"></div>
         <div class="grid-container">
@@ -617,7 +643,8 @@
       </section>
 
       <!--Intermediate CSS Properties-->
-      <section id="css-inter-prop">
+      <div class="id-locate" id="css-inter-prop"></div>
+      <section>
         <header>Intermediate CSS Properties</header>
         <div class="heading-rule"></div>
         <div class="grid-container">
@@ -692,7 +719,8 @@
       </section>
 
       <!--Chrome DevTools section-->
-      <section id="chrome-devtools">
+      <div class="id-locate" id="chrome-devtools"></div>
+      <section>
         <header>Chrome DevTools</header>
         <div class="heading-rule">
           <p>
@@ -700,7 +728,7 @@
             the browser. To open the DevTools: right-click &gt; Inspect.
           </p>
         </div>
-        <div class="text-container">
+        <div class="chromedev-container">
           <img
             class="img-chrome-devtools"
             src="images/chrome-devtools-img.PNG"
@@ -709,7 +737,8 @@
       </section>
 
       <!--CSS Box Model-->
-      <section id="css-box-model">
+      <div class="id-locate" id="css-box-model"></div>
+      <section>
         <header>CSS Box Model</header>
         <div class="heading-rule">
           <ul>
@@ -731,18 +760,180 @@
             <img class="box-model-img" src="images/border-img.jpg" />
           </div>
         </div>
+
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+
+    <span class="css-selector">.join.button</span> {
+      margin-right: <span class="html-attribute">10px</span>;
+      margin-left: <span class="html-attribute">10px</span>;
+      margin-top: <span class="html-attribute">10px</span>;
+      margin-bottom: <span class="html-attribute">10px</span>;
+
+      margin-right: <span class="html-attribute">-10px</span>;
+      
+      margin: <span class="html-attribute">10px</span>;
+      margin: <span class="html-attribute">10px 20px</span>;
+      margin: <span class="html-attribute">&lt;top&gt; &lt;left & right&gt; &lt;bottom&gt;</span>;
+      margin: <span class="html-attribute">&lt;top&gt; &lt;right&gt; &lt;bottom&gt; &lt;left&gt;</span>;
+
+      padding-right: <span class="html-attribute">10px</span>;
+      padding-left: <span class="html-attribute">10px</span>;
+      padding-top: <span class="html-attribute">10px</span>;
+      padding-bottom: <span class="html-attribute">10px</span>;
+
+      padding-right: <span class="html-attribute">-10px</span>;
+
+      padding: <span class="html-attribute">10px</span>;
+      padding: <span class="html-attribute">10px 20px</span>;
+      padding: <span class="html-attribute">&lt;top&gt; &lt;left & right&gt; &lt;bottom&gt;</span>;
+      padding: <span class="html-attribute">&lt;top&gt; &lt;right&gt; &lt;bottom&gt; &lt;left&gt;</span>;
+
+      border-width: <span class="html-attribute">1px</span>;
+      border-style: <span class="html-attribute">solid</span>;
+      border-color: <span class="html-attribute">red</span>;
+
+      border: <span class="html-attribute">&lt;width&gt; &lt;style&gt; &lt;color&gt;</span>;
+      border: <span class="html-attribute">1px solid red</span>;
+    
+    }
+              </code>
+            </pre>
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>
+                Add <span class="html-attribute">10px</span> of space on the
+                outside of the element.
+              </p>
+            </div>
+            <div class="text-container">
+              <p>
+                Normal <code>margin</code> pushes things away from an element.
+              </p>
+            </div>
+            <div class="text-container">
+              <p>
+                Negative <code>margin</code> pulls things towards an element.
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Shorthand for adding <span class="html-attribute">10px</span> of
+                <code>margin</code> on all sides.
+              </p>
+              <p>
+                Add <span class="html-attribute">10px</span> of
+                <code>margin</code> top & bottom and
+                <span class="html-attribute">20px</span> left & right
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Add <span class="html-attribute">10px</span> of space on the
+                inside of the element.
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>Negative <code>padding</code> has no effect.</p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Shorthand for adding <span class="html-attribute">10px</span> of
+                padding on all sides.
+              </p>
+              <p>
+                Add <span class="html-attribute">10px</span> of padding top &
+                bottom and <span class="html-attribute">20px</span> left & right
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>Sets the border width.</p>
+              <p>Sets the border style (to a solid color).</p>
+              <p>Sets the border color.</p>
+            </div>
+
+            <div class="text-container">
+              <p>Shorthand for the 3 properties above.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Text Styles-->
+      <div class="id-locate" id="text-style"></div>
+      <section>
+        <header>Text Styles</header>
+        <div class="heading-rule"></div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code-->
+            <pre>
+              <code>
+    <span class="css-selector">.title</span> {
+      font-family: <span class="html-attribute">Arial</span>;
+      font-family: <span class="html-attribute">Roboto, Verdana, Arial</span>;
+      
+
+      font-size: <span class="html-attribute">30px</span>;
+      font-weight: <span class="html-attribute">bold</span>;
+      font-weight: <span class="html-attribute">700</span>;
+
+
+      font-style: <span class="html-attribute">italic</span>;
+      text-align: <span class="html-attribute">center</span>;
+      line-height: <span class="html-attribute">24px</span>;
+      text-decoration: <span class="html-attribute">underline</span>;
+      text-decoration: <span class="html-attribute">none</span>;
+              </code>
+            </pre>
+            <!--end code-->
+          </div>
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>Change the font.</p>
+              <p>
+                A font-stack: if Roboto is not available, it will fall back to
+                Verdana. If Verdana is not available it will fall back to Arial.
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>Change text size.</p>
+              <p>Change text thickness.</p>
+              <p>
+                Another way to specify font-weight. We can use:
+                <span class="html-attribute">100</span>,
+                <span class="html-attribute">200</span>,
+                <span class="html-attribute">300, ..., 900</span>. bold =
+                <span class="html-attribute">700</span>, reqular =
+                <span class="html-attribute">400</span>, semibold =
+                <span class="html-attribute">500</span>
+              </p>
+            </div>
+            <hr />
+            <div class="text-container">
+              <p>
+                Other values we can use:
+                <span class="html-attribute">left, right, justified </span>
+              </p>
+              <p>Adjust space between lines of text.</p>
+              <p>Underlines the text.</p>
+              <p>Removes underline.</p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <!--JS-->
-    <script>
-      function openNav() {
-        document.getElementById("myNavbar").style.width = "400px";
-      }
-
-      function closeNav() {
-        document.getElementById("myNavbar").style.width = "0%";
-      }
-    </script>
+    <script src="js/menu.js"></script>
   </body>
 </html>
