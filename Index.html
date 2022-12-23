@@ -9,85 +9,40 @@
     <link rel="stylesheet" href="styles/header.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/nav.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="header-container">
-      <div class="menu-button" onclick="openNav()">&#9776;</div>
-    </div>
-    <nav id="myNavbar">
-      <a
-        href="javascript:void(0)"
-        id="closebtn"
-        class="closebtn"
-        onclick="closeNav()"
-        >X</a
-      >
-      <header class="nav-header">HTML & CSS Cheatsheet</header>
-      <div class="flex-container">
-        <ul>
-          <a href="#html-basics"
-            ><li class="nav-link" onclick="closeNav()">HTML Basics</li></a
-          >
-          <a href="#html-syntax"
-            ><li class="nav-link" onclick="closeNav()">HTML Syntax</li></a
-          >
-          <a href="#attributes"
-            ><li class="nav-link" onclick="closeNav()">Attributes</li></a
-          >
-          <a href="#css-basics"
-            ><li class="nav-link" onclick="closeNav()">CSS Basics</li></a
-          >
-          <a href="#css-syntax"
-            ><li class="nav-link" onclick="closeNav()">CSS Syntax</li></a
-          >
-          <a href="#css-properties"
-            ><li class="nav-link" onclick="closeNav()">CSS Properties</li></a
-          >
-          <a href="#css-values"
-            ><li class="nav-link" onclick="closeNav()">CSS Values</li></a
-          >
-          <a href="#class-attributes"
-            ><li class="nav-link" onclick="closeNav()">Class Attributes</li></a
-          >
-          <a href="#css-pseudo"
-            ><li class="nav-link" onclick="closeNav()">CSS Pseudo-Class</li></a
-          >
-          <a href="#css-inter-prop"
-            ><li class="nav-link" onclick="closeNav()">Intermediate CSS</li></a
-          >
-          <a href="#chrome-devtools"
-            ><li class="nav-link" onclick="closeNav()">Chrome DevTools</li></a
-          >
-          <a href="#css-box-model"
-            ><li class="nav-link" onclick="closeNav()">CSS Box Model</li></a
-          >
-          <a href="#text-style"
-            ><li class="nav-link" onclick="closeNav()">Text Styles</li></a
-          >
-          <a href="#html-structure"
-            ><li class="nav-link" onclick="closeNav()">
-              The HTML Structure
-            </li></a
-          >
-          <a href="#html-images"
-            ><li class="nav-link" onclick="closeNav()">Images</li></a
-          >
-          <a href="#html-inputs"
-            ><li class="nav-link" onclick="closeNav()">Inputs</li></a
-          >
-          <a href="#display-property"
-            ><li class="nav-link" onclick="closeNav()">
-              CSS Display Property
-            </li></a
-          >
-          <a href="#reference"
-            ><li class="nav-link" onclick="closeNav()">
-              Reference
-            </li></a
-          >
-        </ul>
+    <header class="main-header">
+      <div class="button-container" id="menuButton" onclick="menuToggle()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
-    </nav>
+    </header>
+      <div id="mySidenav" class="sidenav">
+            <a class="nav-link" href="#html-basics" onclick="closeNav()">HTML Basics</a>
+            <a class="nav-link" href="#html-syntax" onclick="closeNav()">HTML Syntax</a>
+            <a class="nav-link" href="#attributes" onclick="closeNav()">Attributes</a>
+            <a class="nav-link" href="#css-basics" onclick="closeNav()">CSS Basics</a>
+            <a class="nav-link" href="#css-syntax" onclick="closeNav()">CSS Syntax</a>
+            <a class="nav-link" href="#css-properties" onclick="closeNav()">CSS Properties</a>
+            <a class="nav-link" href="#css-values" onclick="closeNav()">CSS Values</a>
+            <a class="nav-link" href="#class-attributes" onclick="closeNav()">Class Attributes</a>
+            <a class="nav-link" href="#css-pseudo" onclick="closeNav()">CSS Pseudo-Class</a>
+            <a class="nav-link" href="#css-inter-prop" onclick="closeNav()">Intermediate CSS</a>
+            <a class="nav-link" href="#chrome-devtools" onclick="closeNav()">Chrome DevTools</a>
+            <a class="nav-link" href="#css-box-model" onclick="closeNav()">CSS Box Model</a>
+            <a class="nav-link" href="#text-style" onclick="closeNav()">Text Styles</a>
+            <a class="nav-link" href="#html-structure" onclick="closeNav()">The HTML Structure</a>
+            <a class="nav-link" href="#html-images" onclick="closeNav()">Images</a>
+            <a class="nav-link" href="#html-inputs" onclick="closeNav()">Inputs</a>
+            <a class="nav-link" href="#display-property" onclick="closeNav()">CSS Display Property</a>
+            <a class="nav-link" href="#reference" onclick="closeNav()">Reference</a>
+      </div>
+
     <main onclick="closeNav()">
       <h1>HTML and CSS Guide</h1>
       <!--html basics section-->

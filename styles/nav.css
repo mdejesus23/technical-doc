@@ -1,172 +1,99 @@
-/* No styling on list items on nav bar only */
-nav li {
-  list-style-type: none;
-}
-
-#myNavbar {
-  visibility: visible;
-  overflow: auto;
-  padding-bottom: 300px;
-}
-
-#myNavbar ul {
-  width: 100%;
-}
-
-.nav-link:hover {
+.sidenav a:hover {
   background-color: var(--bg-color02);
   color: black;
 }
 
-.closebtn {
-  position: absolute;
-  top: 5px;
-  right: 15px;
-  font-size: 20px;
-}
-
 @media (min-width: 1200.1px) {
-  #myNavbar {
-    visibility: visible;
+  .sidenav {
     width: 350px;
     background-color: var(--bg-color01);
     height: 100%;
-    border-right: solid;
-    color: white;
     overflow-y: auto;
+    padding-bottom: 400px;
   
     position: fixed;
     left: 0;
     top: 50px;
     bottom: 0;
-  }
+    transition: 0.4s;
+}
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #myNavbar header {
-    margin: 0;
-    padding: 50px 15px 15px 15px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .nav-link {
-    height: 60px;
-    padding: 15px 15px;
+  .sidenav a {
+    display: block;
+    text-decoration: none;
     border-top: 1px solid white;
     cursor: pointer;
+    height: 60px;
     font-size: 1.3rem;
-    transition: background-color font-size 0.2s;
-  }
+    font-weight: 700;
+    padding: 1rem;
+    transition: background-color font-size width 0.2s;
+}
 
-  .closebtn {
-    visibility: hidden;
-  }
 }
 
 /* Tablet screen */
 @media (max-width: 1200px) {
-  #myNavbar {
-    width: 300px;
+  .sidenav {
+    width: 0;
     background-color: var(--bg-color01);
     height: 100%;
-    border-right: solid;
-    color: white;
     overflow-y: auto;
+    padding-bottom: 400px;
   
     position: fixed;
     left: 0;
     top: 50px;
     bottom: 0;
-    z-index: 2;
-  }
+    transition: 0.4s;
+}
 
-  .closebtn {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 20px;
-  }
+  .change.sidenav {
+    width: 300px;
+}
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #myNavbar header {
-    margin: 0;
-    padding: 50px 15px 15px 15px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .nav-link {
-    height: 50px;
-    padding: 15px 15px;
+  .sidenav a {
+    display: block;
+    text-decoration: none;
     border-top: 1px solid white;
     cursor: pointer;
+    height: 60px;
     font-size: 1.2rem;
-    transition: background-color font-size 0.2s;
-  }
-  
+    font-weight: 700;
+    padding: 1rem;
+    transition: background-color font-size width 0.2s;
+}
 }
 
 /* Mobile screen */
 @media (max-width: 680px) {
-  #myNavbar {
-    width: 260px;
+  .sidenav {
+    width: 0;
     background-color: var(--bg-color01);
     height: 100%;
-    border-right: solid;
-    color: white;
     overflow-y: auto;
+    padding-bottom: 400px;
   
     position: fixed;
     left: 0;
     top: 50px;
     bottom: 0;
-    z-index: 2;
-  }
+    transition: 0.4s;
+}
 
-  .closebtn {
-    position: absolute;
-    top: 5px;
-    right: 15px;
-    font-size: 20px;
-    visibility: visible;
-  }
+  .change.sidenav {
+    width: 200px;
+}
 
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #myNavbar header {
-    margin: 0;
-    padding: 50px 15px 15px 15px;
-    font-size: 1.6rem;
-    font-weight: 600;
-    text-align: center;
-  }
-
-  .nav-link {
-    height: 40px;
-    padding: 10px 10px;
+  .sidenav a {
+    display: block;
+    text-decoration: none;
     border-top: 1px solid white;
     cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color font-size 0.2s;
-  }
-  
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem;
+    transition: background-color font-size width 0.2s;
+}
 }
