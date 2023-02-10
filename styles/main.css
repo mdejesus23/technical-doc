@@ -117,7 +117,7 @@ h1 {
   }
 
     /* Add Animation */
-  .modal-content, #caption {  
+  .modal-content {  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
@@ -237,12 +237,6 @@ h1 {
 
     pre {
       margin-bottom: 5px;
-    }
-
-    .chromedev-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .modal-content {

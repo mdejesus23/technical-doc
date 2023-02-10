@@ -27,7 +27,6 @@ let modal = document.getElementById("myModal");
 let img = document.getElementById("chromedevImage");
 let modalImg = document.getElementById("modalImage");
 img.onclick = function(){
-  debugger
   modal.style.display = "block";
   modalImg.src = this.src;
 }
