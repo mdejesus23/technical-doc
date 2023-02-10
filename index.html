@@ -16,34 +16,34 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="button-container" id="menuButton" onclick="menuToggle()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
+      <div class="button-container button" id="menuButton" onclick="menuToggle()">
+        <div class="bar1 button"></div>
+        <div class="bar2 button"></div>
+        <div class="bar3 button"></div>
       </div>
     </header>
       <div id="mySidenav" class="sidenav">
-            <a class="nav-link" href="#html-basics" onclick="closeNav()">HTML Basics</a>
-            <a class="nav-link" href="#html-syntax" onclick="closeNav()">HTML Syntax</a>
-            <a class="nav-link" href="#attributes" onclick="closeNav()">Attributes</a>
-            <a class="nav-link" href="#css-basics" onclick="closeNav()">CSS Basics</a>
-            <a class="nav-link" href="#css-syntax" onclick="closeNav()">CSS Syntax</a>
-            <a class="nav-link" href="#css-properties" onclick="closeNav()">CSS Properties</a>
-            <a class="nav-link" href="#css-values" onclick="closeNav()">CSS Values</a>
-            <a class="nav-link" href="#class-attributes" onclick="closeNav()">Class Attributes</a>
-            <a class="nav-link" href="#css-pseudo" onclick="closeNav()">CSS Pseudo-Class</a>
-            <a class="nav-link" href="#css-inter-prop" onclick="closeNav()">Intermediate CSS</a>
-            <a class="nav-link" href="#chrome-devtools" onclick="closeNav()">Chrome DevTools</a>
-            <a class="nav-link" href="#css-box-model" onclick="closeNav()">CSS Box Model</a>
-            <a class="nav-link" href="#text-style" onclick="closeNav()">Text Styles</a>
-            <a class="nav-link" href="#html-structure" onclick="closeNav()">The HTML Structure</a>
-            <a class="nav-link" href="#html-images" onclick="closeNav()">Images</a>
-            <a class="nav-link" href="#html-inputs" onclick="closeNav()">Inputs</a>
-            <a class="nav-link" href="#display-property" onclick="closeNav()">CSS Display Property</a>
-            <a class="nav-link" href="#reference" onclick="closeNav()">Reference</a>
+            <a class="nav-link" href="#html-basics">HTML Basics</a>
+            <a class="nav-link" href="#html-syntax">HTML Syntax</a>
+            <a class="nav-link" href="#attributes">Attributes</a>
+            <a class="nav-link" href="#css-basics">CSS Basics</a>
+            <a class="nav-link" href="#css-syntax">CSS Syntax</a>
+            <a class="nav-link" href="#css-properties">CSS Properties</a>
+            <a class="nav-link" href="#css-values">CSS Values</a>
+            <a class="nav-link" href="#class-attributes">Class Attributes</a>
+            <a class="nav-link" href="#css-pseudo">CSS Pseudo-Class</a>
+            <a class="nav-link" href="#css-inter-prop">Intermediate CSS</a>
+            <a class="nav-link" href="#chrome-devtools">Chrome DevTools</a>
+            <a class="nav-link" href="#css-box-model">CSS Box Model</a>
+            <a class="nav-link" href="#text-style">Text Styles</a>
+            <a class="nav-link" href="#html-structure">The HTML Structure</a>
+            <a class="nav-link" href="#html-images">Images</a>
+            <a class="nav-link" href="#html-inputs">Inputs</a>
+            <a class="nav-link" href="#display-property">CSS Display Property</a>
+            <a class="nav-link" href="#reference">Reference</a>
       </div>
 
-    <main onclick="closeNav()">
+    <main id="main">
       <h1>HTML and CSS Guide</h1>
       <!--html basics section-->
       <div class="id-locate" id="html-basics"></div>
@@ -693,11 +693,14 @@
             the browser. To open the DevTools: right-click &gt; Inspect.
           </p>
         </div>
-        <div class="chromedev-container">
-          <img
+        <img
+            id="chromedevImage"
             class="img-chrome-devtools"
             src="images/chrome-devtools-img.PNG"
           />
+        <div id="myModal" class="chromedev-container modal">
+          <span id="closeBtn" class="close">&times;</span>
+          <img class="modal-content" id="modalImage">
         </div>
       </section>
 
