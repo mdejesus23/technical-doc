@@ -1045,7 +1045,7 @@
         </div>
       </section>
 
-      <!--Intermediate CSS Properties-->
+      <!--Images-->
       <div class="id-locate" id="html-images"></div>
       <section>
         <header>Images</header>
@@ -1055,67 +1055,122 @@
             <!--Code section-->
             <pre>
               <code>
-    <span class="css-selector">.subscribe-button:hover</span> {
-      opacity: <span class="html-attribute">0.5</span>;
-      opacity: <span class="html-attribute">0</span>;
-      opacity: <span class="html-attribute">1</span>;
+      &lt;img src=<span class="html-attribute">"image.png"</span>&gt;
+      &lt;img src=<span class="html-attribute">"pics/image.png"</span>&gt;
+      &lt;img class=<span class="html-attribute">"image"</span> src=<span class="html-attribute">"pics/image.png"</span>&gt;
+      
+      <span class="css-selector">.image</span> {
+        width: <span class="html-attribute">300px</span>;
+        
+        height: <span class="html-attribute">300px</span>;
+        object-fit: <span class="html-attribute">cover</span>;
 
-      transition: <span class="html-attribute">&lt;transition&gt; &lt;duration&gt;</span>;
+        object-fit: <span class="html-attribute">contain</span>;
 
-      transition: <span class="html-attribute">background-color 1s</span>;
-      transition: <span class="html-attribute">color 0.15s</span>;
-      transition: <span class="html-attribute">&lt;property1&gt; &lt;duration1&gt;</span>,
-          <span class="html-attribute">&lt;property2&gt; &lt;duration2&gt;</span>,
-          <span class="html-attribute">...</span>;
-      transition: <span class="html-attribute">background-color 0.15s</span>,
-          <span class="html-attribute">color 0.15s</span>;
-
-      box-shadow: <span class="html-attribute">&lt;h-position&gt; &lt;v-position&gt; &lt;blur&gt; &lt;color&gt;</span>;
-      box-shadow: <span class="html-attribute">3px 4px 5px black</span>;
-
-      box-shadow: <span class="html-attribute">3px 4px 0 gba(0, 0, 0, 0.15)</span>;
-    }
+        object-position: <span class="html-attribute">left</span>;
+        object-position: <span class="html-attribute">right</span>;
+        object-position: <span class="html-attribute">top</span>;
+        object-position: <span class="html-attribute">bottom</span>;
+      }
               </code>
             </pre>
           </div>
+
           <div class="grid-item2">
             <div class="text-container">
-              <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
-              <p>Sets how see-through an element is: 0.5 = 50% see-through.</p>
-              <p>1 = not see-through (this is the default value).</p>
+              <p>Loads an image <span class="html-attribute">image.png</span></p>
+              <p>Loads <span class="html-attribute">image.png</span> in the <span class="html-attribute">pics</span> folder.</p>
             </div>
             <hr />
             <div class="text-container">
               <p>
-                Transition smoothly when changing styles (often used when
-                hovering).
+                Resizes the image to a width of <span class="html-attribute">300px</span>. Height will also resize to keep the image's dimensions.
               </p>
-              <p>Transition background color over 1 second.</p>
-              <p>Transition text color over 0.15 seconds.</p>
+              <p>If both <span class="html-attribute">width</span> and <span class="html-attribute">height</span> are set, the image may stretch.</p>
+              <p>Enlarges the image to cover the entire <span class="html-attribute">width</span> * <span class="html-attribute">heigth</span> area without stretching or distorting.</p>
               <p>
-                Transition multiple properties by separating them with a comma.
+                Shrinks the image so that it's contained in the <span class="html-attribute">width</span> * <span class="html-attribute">height</span> area.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Inputs-->
+      <div class="id-locate" id="html-inputs"></div>
+      <section>
+        <header>Inputs</header>
+        <div class="heading-rule"></div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+      &lt;inputs type=<span class="html-attribute">"text"</span>&gt;
+      &lt;inputs type=<span class="html-attribute">"text"</span> placeholder=<span class="html-attribute">"Search"</span>&gt;
+      &lt;inputs type=<span class="html-attribute">"checkbox"</span>&gt;
+      &lt;inputs class=<span class="html-attribute">"search-bar"</span> type=<span class="html-attribute">"text"</span>&gt;
+      
+
+      <span class="css-selector">.search-bar</span> {
+        font-size: <span class="html-attribute">30px</span>;
+      }
+
+      <span class="css-selector">.search-bar::placeholder</span> {
+        font-size: <span class="html-attribute">30px</span>;
+      }
+              </code>
+            </pre>
+          </div>
+
+          <div class="grid-item2">
+            <div class="text-container">
+              <p>Creates a text box.</p>
+              <p>Add a placeholder (a label) to the text box.</p>
+              <p>Creates a checkbox.</p>
             </div>
             <hr />
             <div class="text-container">
               <p>
-                Transition both background color and text color over 0.15
-                seconds.
+                Changes the font-size when typing into the text box.
               </p>
             </div>
-            <hr />
+            <hr/>
             <div class="text-container">
               <p>
-                Creates a shadow that's 3px to the right of the element, 4px to
-                the bottom, with 5px of blur, and color of black.
+                Changes the font-size of the placeholder.
               </p>
             </div>
-            <hr />
+          </div>
+        </div>
+      </section>
+
+      <!--CSS Display Property-->
+      <div class="id-locate" id="display-property"></div>
+      <section>
+        <header>CSS Display Property</header>
+        <div class="heading-rule"></div>
+        <div class="grid-container">
+          <div class="grid-item1">
+            <!--Code section-->
+            <pre>
+              <code>
+      <span class="css-selector">.element</span> {
+        display: <span class="html-attribute">block</span>;
+        display: <span class="html-attribute">inline-block</span>;
+        vertical-align: <span class="html-attribute">middle</span>;
+        display: <span class="html-attribute">inline</span>;
+      }
+              </code>
+            </pre>
+          </div>
+
+          <div class="grid-item2">
             <div class="text-container">
-              <p>
-                Creates a shadow that's 3px to the right, 4px to the bottom,
-                with no blur, and a very faint black color.
-              </p>
+              <p>Element will take up the entire line in its container.</p>
+              <p>Element will only take up as much space as needed.</p>
+              <p>Determines vertical alignment of inline-block elements.</p>
+              <p>Element will appear within a line of text (a text element).</p>
             </div>
           </div>
         </div>
