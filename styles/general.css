@@ -33,23 +33,22 @@ body {
   color: black;
 }
 
- /* Make all link text black with no text decoration */
+/* Make all link text black with no text decoration */
 a {
   color: white;
   text-decoration: none;
 }
 
-  /* large screen */
-@media (min-width: 1200.1px)  {
+/* large screen */
+@media (min-width: 1200.1px) {
   body {
     margin-left: 300px;
     color: black;
   }
 
   html {
-    font-size: 18px;
+    font-size: 16px;
   }
-
 }
 
 /* Tablet screen */
@@ -59,9 +58,8 @@ a {
   }
 
   html {
-    font-size: 16px;
+    font-size: 15px;
   }
-
 }
 
 /* Mobile screen */
